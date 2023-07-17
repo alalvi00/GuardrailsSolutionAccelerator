@@ -11,7 +11,7 @@ function Check-CBSSensors {
         $ReportTime
     ) 
 
-    $IsCompliant = $true 
+    $IsCompliant = $false 
     $Object = New-Object PSObject
 
     $Object | Add-Member -MemberType NoteProperty -Name ControlName  -Value $ControlName
@@ -36,6 +36,10 @@ function Check-CBSSensors {
             {
                 if ($debug) {Write-Output "Missing $CBSResourceName"}
                 $IsCompliant = $false 
+            }
+            else{
+                if ($debug) {Write-Output "Found $CBSResourceName"}
+                $IsCompliant = $true
             }
         }
         if ($IsCompliant)
