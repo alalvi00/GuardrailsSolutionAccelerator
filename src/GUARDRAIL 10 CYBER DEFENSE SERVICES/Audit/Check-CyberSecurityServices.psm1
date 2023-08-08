@@ -2,7 +2,7 @@ function Check-CBSSensors {
     param (
         [string] $SubscriptionName , 
         [string] $TenantID , 
-        [string] $ControlName, `
+        [string] $ControlName,
         [string] $ItemName,  
         [string] $itsgcode,
         [hashtable] $msgTable,
@@ -11,6 +11,7 @@ function Check-CBSSensors {
         $ReportTime
     ) 
 
+    $debug = $true
     $IsCompliant = $false 
     $Object = New-Object PSObject
 
