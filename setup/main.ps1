@@ -86,12 +86,11 @@ $ResourceGroupName = Get-GSAAutomationVariable -Name "ResourceGroupName"
 # This is one of the valid date format (ISO-8601) that can be sorted properly in KQL
 $ReportTime = (get-date).tostring("yyyy-MM-dd HH:mm:ss")
 $StorageAccountName = Get-GSAAutomationVariable -Name "StorageAccountName" 
-$Locale = Get-GSAAutomationVariable -Name "GuardRailsLocale"
+# $Locale = Get-GSAAutomationVariable -Name "GuardRailsLocale"
 
-If ($Locale -eq $null) {
+If ($null -eq $Locale) {
     $Locale = "en-CA"
 }
-
 
 $SubID = (Get-AzContext).Subscription.Id
 $tenantID = (Get-AzContext).Tenant.Id
