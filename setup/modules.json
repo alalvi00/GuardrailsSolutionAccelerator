@@ -310,7 +310,7 @@
     "Status": "Enabled",
     "Required": "True",
     "ModuleName": "Get-UserAuthenticationMethod",
-    "Script": "Get-UserAuthenticationMethod  -ControlName $msgTable.CtrName1 -ItemName $msgTable.mfaEnforcement -FirstBreakGlassEmail $vars.FirstBreakGlassUPN -SecondBreakGlassEmail $vars.SecondBreakGlassUPN -MsgTable $msgTable  -ReportTime $ReportTime -itsgcode $vars.itsgcode",
+    "Script": "Get-UserAuthenticationMethod  -ControlName $msgTable.CtrName3 -ItemName $msgTable.mfaEnforcement -FirstBreakGlassEmail $vars.FirstBreakGlassUPN -SecondBreakGlassEmail $vars.SecondBreakGlassUPN -MsgTable $msgTable  -ReportTime $ReportTime -itsgcode $vars.itsgcode",
     "secrets": [
       {
         "Name": "FirstBreakGlassUPN",
