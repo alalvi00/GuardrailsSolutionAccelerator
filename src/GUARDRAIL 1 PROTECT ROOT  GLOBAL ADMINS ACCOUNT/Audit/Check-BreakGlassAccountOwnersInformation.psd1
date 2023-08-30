@@ -12,7 +12,7 @@
 RootModule = 'Check-BreakGlassAccountOwnersInformation'
 
 # Version number of this module.
-ModuleVersion = '1.1.5'
+ModuleVersion = '1.1.4'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
